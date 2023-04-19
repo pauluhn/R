@@ -2,5 +2,7 @@ R 4.2.2
 
 # install package
 install.packages("package_name")
-# load installed package
+install.packages("package_name", dependencies = TRUE)
+
+# load package
 library(package_name)
