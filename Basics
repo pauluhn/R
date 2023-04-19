@@ -10,3 +10,7 @@ install.packages(c("package_name", "second_package_name"))
 
 # load package
 library(package_name)
+
+ls()                # workspace variables
+?function_name      # help
+args(function_name) # function arguments
