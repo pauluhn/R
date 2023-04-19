@@ -6,7 +6,7 @@ installed.packages()
 # install package(s)
 install.packages("package_name")
 install.packages("package_name", dependencies = TRUE)
-install.packages(c("package_name", "second_package_name"))
+install.packages(c("package_name", "second_package_name")) # c() concatenates to create a vector
 
 # load package
 library(package_name)
@@ -19,7 +19,18 @@ class(object_name)  # object type - data.frame, numeric, character, logical, fac
 str(object_name)    # object structure
 head(object_name)   # first six lines
 names(object_name)  # object column/variable names
-object_name$column_name
 
-length(vector_name) # vector length
-levels(factor_name) # factor levels
+object_name$column_name      # vector of column_name
+object_name[["column_name"]] # vector of column_name
+object_name["column_name"]   # data.frame subset
+
+
+length(vector_name)  # vector length
+levels(factor_name)  # factor levels
+nlevels(factor_name) # number of factor levels
+
+1:10
+seq(1,10)
+
+identical(object_1, object_2)
+table(vector_name)            # frequency table
