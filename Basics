@@ -31,6 +31,7 @@ nlevels(factor_name) # number of factor levels
 
 1:10
 seq(1,10)
+seq(1,10,2) # stride by 2
 
 identical(object_1, object_2)
 table(vector_name)            # frequency table
