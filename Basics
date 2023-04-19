@@ -6,7 +6,7 @@ installed.packages()
 # install package(s)
 install.packages("package_name")
 install.packages("package_name", dependencies = TRUE)
-install.packages(c("package_name", "second_package_name")) # c() concatenates to create a vector
+install.packages(c("package_name", "second_package_name")) # c() concatenates/combines to create a vector
 
 # load package
 library(package_name)
@@ -16,6 +16,7 @@ ls()                # workspace variables
 args(function_name) # function arguments
 
 class(object_name)  # object type - data.frame, numeric, character, logical, factor, list, matrix
+                    # integer is memory-efficient numeric, ie 3L instead of 3
 str(object_name)    # object structure
 head(object_name)   # first six lines
 names(object_name)  # object column/variable names
@@ -31,7 +32,8 @@ nlevels(factor_name) # number of factor levels
 
 1:10
 seq(1,10)
-seq(1,10,2) # stride by 2
+seq(1,10,2)             # stride by 2
+seq(0,100,length.out=5) # 0, 25, 50, 75, 100
 
 identical(object_1, object_2)
 table(vector_name)            # frequency table
@@ -58,3 +60,8 @@ codes[1:2]
 # If the entries of a vector are named, they may be accessed by referring to their name
 codes["canada"]
 codes[c("egypt","italy")]
+
+
+# typecast
+as.character(numeric_value)
+as.numeric(numeric_string)
