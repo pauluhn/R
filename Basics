@@ -14,3 +14,8 @@ library(package_name)
 ls()                # workspace variables
 ?function_name      # help
 args(function_name) # function arguments
+class(object_name)  # object type - data.frame, numeric, character, logical, factor, list, matrix
+str(object_name)    # object structure
+head(object_name)   # first six lines
+names(object_name)  # object column/variable names
+object_name$column_name
