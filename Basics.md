@@ -85,6 +85,10 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`my_df["variable_name"]`|subset of data.frame|
 |`with(my_df, plot(variable1, variable2))`|avoid using accessors|
 |`nrow(my_df)`|number of rows|
+|`summarize(my_df, minimum=min(x)`|create new data frame with summary, `dplyr`|
+|`group_by(my_df, x)`|create grouped data frame, `dplyr`|
+|`pull(my_df, x)`|similar to `$`, `dplyr`|
+|`.$x`|placeholder for data when piping|
 
 ### manipulate
 _uses `dplyr` package_
@@ -180,6 +184,17 @@ names(codes) <- country
 
 
 
+
+
+
+
+# Function
+```
+my_func <- function(x){
+  r <-  quantile(x, c(0, 0.5, 1))
+  data.frame(minimum = r[1], median = r[2], maximum = r[3]) 
+}
+```
 
 
 
