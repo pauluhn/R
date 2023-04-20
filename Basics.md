@@ -77,12 +77,13 @@ y <- c("B", "L", "P", "R", "S", "T")
 my_df <- data.frame(v1 = x, v2 = y)
 ```
 
-### accessor
+### commands
 |command|notes|
 |-|-|
 |`my_df$variable_name`|vector of variable_name|
 |`my_df[["variable_name"]]`|vector of variable_name|
 |`my_df["variable_name"]`|subset of data.frame|
+|`nrow(my_df)`|number of rows|
 
 ### manipulate
 _uses `dplyr` package_
