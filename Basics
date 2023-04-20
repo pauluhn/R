@@ -65,3 +65,10 @@ codes[c("egypt","italy")]
 # typecast
 as.character(numeric_value)
 as.numeric(numeric_string)
+
+sort(x)
+order(x) # sorted indices
+rank(x)  # rank of items of original vector
+
+max(x)
+which.max(x) # returns index of max
