@@ -1,6 +1,6 @@
-# R 4.2.2
+`R 4.2.2`
 
-## Packages
+# Packages
 
 ### list
 `installed.packages()`
@@ -13,7 +13,7 @@
 ### load
 `library(package_name)`
 
-## Commands
+# Basic commands
 |command|notes|
 |-|-|
 |`ls()`|list workspace variables|
@@ -26,7 +26,7 @@
 |`identical(x, y)`|compare if two objects are identical|
 
 
-## Object types
+# Object types
 - data.frame
 - numeric
 - character
@@ -40,9 +40,9 @@
 - as.character(numeric_value)
 - as.numeric(numeric_string)
 
-### Data.frame
+# Data.frame
 
-#### Create
+### create
 ```
 x <- c(35, 88, 42, 84, 81, 30)
 y <- c("B", "L", "P", "R", "S", "T")
@@ -55,7 +55,7 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`my_df[["variable_name"]]`|vector of variable_name|
 |`my_df["variable_name"]`|subset of data.frame|
 
-### Vector
+# Vector
 |command|notes|
 |-|-|
 |`length(x)`|vector length|
@@ -72,7 +72,7 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`match(x, y)`|returns y indicies that match x|
 |`x %in% y`|returns logical vector|
 
-#### `match` example
+### `match` example
 ```
 # example of same but opposite order
 match(c("New York", "Florida", "Texas"), murders$state)
@@ -81,7 +81,7 @@ which(murders$state%in%c("New York", "Florida", "Texas"))
 #> [1] 10 33 44
 ```
 
-#### vector with names
+### vector with names
 ```
 codes <- c(italy = 380, canada = 124, egypt = 818)
 ```
@@ -106,7 +106,7 @@ names(codes) <- country
 |`codes["canada"]`|canada 124|
 |`codes[c("egypt","italy")]`|egypt 818, italy 380|
 
-### Numeric
+# Numeric
 |command|notes|
 |-|-|
 |`1:5`|1, 2, 3, 4, 5|
@@ -114,7 +114,7 @@ names(codes) <- country
 |`seq(1,10,2)`|1, 3, 5, 7, 9|
 |`seq(0,100,length.out=5)`|0, 25, 50, 75, 100|
 
-### Factor
+# Factor
 |command|notes|
 |-|-|
 |`levels(x)`|factor levels|
