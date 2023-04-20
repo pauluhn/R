@@ -70,6 +70,13 @@ _uses `dplyr` package_
 |`filter(my_df, logical)`|subset of rows|
 |`select(my_df, column1, column2)`|select specific columns|
 
+### pipe
+|command|notes|
+|-|-|
+|`\|>`|`R 4.1.0+`|
+|`%>%`|`tidyverse` package|
+
+
 # Vector
 |command|notes|
 |-|-|
