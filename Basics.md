@@ -13,6 +13,12 @@
 ### load
 `library(package_name)`
 
+### should-haves
+|package|notes|
+|-|-|
+|`tidyverse`||
+|`dplyr`||
+
 # Basic commands
 |command|notes|
 |-|-|
@@ -49,11 +55,20 @@ y <- c("B", "L", "P", "R", "S", "T")
 my_df <- data.frame(v1 = x, v2 = y)
 ```
 
+### accessor
 |command|notes|
 |-|-|
 |`my_df$variable_name`|vector of variable_name|
 |`my_df[["variable_name"]]`|vector of variable_name|
 |`my_df["variable_name"]`|subset of data.frame|
+
+### manipulate
+_uses `dplyr` package_
+|command|notes|
+|-|-|
+|`mutate(my_df, new_column=column1+column2)`|add columns|
+|`filter(my_df, logical)`|subset of rows|
+|`select(my_df, column1, column2)`|select specific columns|
 
 # Vector
 |command|notes|
