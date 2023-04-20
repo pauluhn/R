@@ -106,7 +106,8 @@ _skip `my_df` when piping commands_
 |`table(x)`|frequency table|
 |`sort(x)`|sorted values|
 |`order(x)`|sorted indices|
-|`rank(x)`|rank of items of original vector|
+|`rank(x)`|rank of items of original vector, ascending|
+|`rank(-x)`|rank of items of original vector, descending|
 |`max(x)`|max value|
 |`min(x)`|min value|
 |`which.max(x)`|index of max|
