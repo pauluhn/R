@@ -188,7 +188,7 @@ names(codes) <- country
 # Plot
 |command|notes|
 |-|-|
-|`plot(x, y)`|basic plot|
+|`plot(x, y)`|scatterplot|
 |`hist(x)`|histogram|
 |`boxplot(x~y, data=my_df)`|boxplot|
 |`image(matrix)`|colored matrix|
