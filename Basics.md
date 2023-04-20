@@ -19,6 +19,12 @@
 |`tidyverse`||
 |`dplyr`||
 
+
+
+
+
+
+
 # Basic commands
 |command|notes|
 |-|-|
@@ -37,6 +43,11 @@
 |`\|>`|`R 4.1.0+`|
 |`%>%`|`tidyverse` package|
 
+
+
+
+
+
 # Object types
 - data.frame
 - numeric
@@ -50,6 +61,12 @@
 ### typecast
 - as.character(numeric_value)
 - as.numeric(numeric_string)
+
+
+
+
+
+
 
 # Data.frame
 
@@ -74,6 +91,13 @@ _uses `dplyr` package_
 |`mutate(my_df, new_column=column1+column2)`|add columns|
 |`filter(my_df, logical)`|subset of rows|
 |`select(my_df, column1, column2)`|select specific columns|
+
+_skip `my_df` when piping commands_
+
+
+
+
+
 
 # Vector
 |command|notes|
@@ -126,6 +150,12 @@ names(codes) <- country
 |`codes["canada"]`|canada 124|
 |`codes[c("egypt","italy")]`|egypt 818, italy 380|
 
+
+
+
+
+
+
 # Numeric
 |command|notes|
 |-|-|
@@ -133,6 +163,11 @@ names(codes) <- country
 |`seq(1,5)`|1, 2, 3, 4, 5|
 |`seq(1,10,2)`|1, 3, 5, 7, 9|
 |`seq(0,100,length.out=5)`|0, 25, 50, 75, 100|
+
+
+
+
+
 
 # Factor
 |command|notes|
