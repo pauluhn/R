@@ -74,3 +74,10 @@ max(x)
 min(x)
 which.max(x) # returns index of max
 which.min(x) # returns index of min
+
+# Creating data frames
+vector_1 <- c(35, 88, 42, 84, 81, 30)
+vector_2 <- c("B", "L", "P", "R", "S", "T")
+my_df <- data.frame(v1 = vector_1, v2 = vector_2)
+
+is.na(x) # returns logical vector 
