@@ -71,4 +71,6 @@ order(x) # sorted indices
 rank(x)  # rank of items of original vector
 
 max(x)
+min(x)
 which.max(x) # returns index of max
+which.min(x) # returns index of min
