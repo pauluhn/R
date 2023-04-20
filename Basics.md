@@ -31,6 +31,11 @@
 |`names(x)`|object variable names|
 |`identical(x, y)`|compare if two objects are identical|
 
+### pipe
+|command|notes|
+|-|-|
+|`\|>`|`R 4.1.0+`|
+|`%>%`|`tidyverse` package|
 
 # Object types
 - data.frame
@@ -69,13 +74,6 @@ _uses `dplyr` package_
 |`mutate(my_df, new_column=column1+column2)`|add columns|
 |`filter(my_df, logical)`|subset of rows|
 |`select(my_df, column1, column2)`|select specific columns|
-
-### pipe
-|command|notes|
-|-|-|
-|`\|>`|`R 4.1.0+`|
-|`%>%`|`tidyverse` package|
-
 
 # Vector
 |command|notes|
