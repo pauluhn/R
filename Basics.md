@@ -83,6 +83,7 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`my_df$variable_name`|vector of variable_name|
 |`my_df[["variable_name"]]`|vector of variable_name|
 |`my_df["variable_name"]`|subset of data.frame|
+|`with(my_df, plot(variable1, variable2))`|avoid using accessors|
 |`nrow(my_df)`|number of rows|
 
 ### manipulate
@@ -176,3 +177,18 @@ names(codes) <- country
 |-|-|
 |`levels(x)`|factor levels|
 |`nlevels(x)`|number of factor levels|
+
+
+
+
+
+
+
+
+# Plot
+|command|notes|
+|-|-|
+|`plot(x, y)`|basic plot|
+|`hist(x)`|histogram|
+|`boxplot(x~y, data=my_df)`|boxplot|
+|`image(matrix)`|colored matrix|
