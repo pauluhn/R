@@ -97,11 +97,17 @@ _uses `dplyr` package_
 |`mutate(my_df, new_column=column1+column2)`|add columns|
 |`filter(my_df, logical)`|subset of rows|
 |`select(my_df, column1, column2)`|select specific columns|
+|`arrange(my_df, column3)`|sort table by column, ascending|
+|`arrange(my_df, desc(column3))`|sort table by column, descending|
+|`arrange(my_df, column3, column4, etc)`|sort table by column3, break tie by column4, etc|
+|`top_n(my_df, 6, column1)`|like `head`, but uses column to filter (not sorted)|
 
 _skip `my_df` when piping commands_
 
-
-
+```
+# return the top 10 states ranked by murder rate, sorted by murder rate
+murders %>% arrange(desc(rate)) %>% top_n(10)
+```
 
 
 
