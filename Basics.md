@@ -49,6 +49,8 @@
 
 
 # Object types
+- data.table - `data.table` package
+- tbl - _"tibble"_, `tidyverse` package
 - data.frame
 - numeric
 - character
@@ -63,6 +65,46 @@
 - as.numeric(numeric_string)
 
 
+
+
+
+
+
+
+# Data.table
+
+Memory-efficient, update by reference
+
+### create
+```
+install.packages("data.table")
+library(data.table)
+my_dt <- setDT(my_df) # data.table <- data.frame
+```
+
+### manipulate
+|command|notes|
+|-|-|
+|`my_dt[, c("column1", "column2")]`|select specific columns|
+|`my_dt[, .(column1, column2)]`|select specific columns using `.()`|
+|`my_dt[, new_column := column1 + column2]`|add/update columns using `:=`|
+|`my_dt[, ":="(new_col1 = col1 + col2, new_col2 = rank(col1))]`|add/update multiple columns|
+|`my_dt[column1 <= 0.7]`|subset of rows|
+|`my_dt[column1 <= 0.7, .(column1, column2)]`|subset of rows with specific columns|
+|`my_dt[, .(minimum = min(x), maximum = max(x))]`|create summary data table using `=`|
+|`my_dt[x < 1, .(minimum = min(x), maximum = max(x))]`|create summary for subset|
+|`my_dt[, .(minimum = min(x), maximum = max(x)), by = y]`|create grouped summary|
+|`my_dt[order(column1)]`|sort data table by column, ascending|
+|`my_dt[order(-column1)]`|sort data table by column, descending|
+|`my_dt[order(column1, decreasing = TRUE)]`|sort data table by column, descending|
+|`my_dt[order(column1, column2, etc)]`|sort data table by column1, break tie by column2, etc|
+
+
+
+
+
+
+# Tibble
 
 
 
@@ -85,9 +127,9 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`my_df["variable_name"]`|subset of data.frame|
 |`with(my_df, plot(variable1, variable2))`|avoid using accessors|
 |`nrow(my_df)`|number of rows|
-|`summarize(my_df, minimum=min(x)`|create new data frame with summary, `dplyr`|
-|`group_by(my_df, x)`|create a grouped data frame, `dplyr`|
-|`group_by(my_df, x, y)`|create a multi-grouped data frame, `dplyr`|
+|`summarize(my_df, minimum = min(x)`|create new data frame with summary, `dplyr`|
+|`group_by(my_df, x)`|create grouped data frame, `dplyr`|
+|`group_by(my_df, x, y)`|create multi-grouped data frame, `dplyr`|
 |`pull(my_df, x)`|similar to `$`, `dplyr`|
 |`.$x`|placeholder for data when piping|
 
@@ -95,12 +137,12 @@ my_df <- data.frame(v1 = x, v2 = y)
 _uses `dplyr` package_
 |command|notes|
 |-|-|
-|`mutate(my_df, new_column=column1+column2)`|add columns|
-|`filter(my_df, logical)`|subset of rows|
+|`mutate(my_df, new_column = column1 + column2)`|add columns|
+|`filter(my_df, column1 <= 0.7)`|subset of rows|
 |`select(my_df, column1, column2)`|select specific columns|
-|`arrange(my_df, column3)`|sort table by column, ascending|
-|`arrange(my_df, desc(column3))`|sort table by column, descending|
-|`arrange(my_df, column3, column4, etc)`|sort table by column3, break tie by column4, etc|
+|`arrange(my_df, column3)`|sort data frame by column, ascending|
+|`arrange(my_df, desc(column3))`|sort data frame by column, descending|
+|`arrange(my_df, column3, column4, etc)`|sort data frame by column3, break tie by column4, etc|
 |`top_n(my_df, 6, column1)`|like `head`, but uses column to filter (not sorted)|
 
 _skip `my_df` when piping commands_
