@@ -86,7 +86,8 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`with(my_df, plot(variable1, variable2))`|avoid using accessors|
 |`nrow(my_df)`|number of rows|
 |`summarize(my_df, minimum=min(x)`|create new data frame with summary, `dplyr`|
-|`group_by(my_df, x)`|create grouped data frame, `dplyr`|
+|`group_by(my_df, x)`|create a grouped data frame, `dplyr`|
+|`group_by(my_df, x, y)`|create a multi-grouped data frame, `dplyr`|
 |`pull(my_df, x)`|similar to `$`, `dplyr`|
 |`.$x`|placeholder for data when piping|
 
