@@ -30,6 +30,7 @@
 |-|-|
 |`ls()`|list workspace variables|
 |`?ls`|show help|
+|`options(digits = 3)`|report 3 significant digits for all answers|5
 |`args(ls)`|function arguments|
 |`class(x)`|object type (see #object-type)|
 |`str(x)`|object structure|
