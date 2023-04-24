@@ -63,6 +63,7 @@
 ### typecast
 - as.character(numeric_value)
 - as.numeric(numeric_string)
+- as_tibble(my_df), `tidyverse` package
 
 
 
@@ -106,6 +107,18 @@ my_dt <- setDT(my_df) # data.table <- data.frame
 
 # Tibble
 
+A tibble is a better version of a data frame:
+- displays better
+- subsets are always tibbles (not vectors)
+- shows warnings instead of `NULL`
+- can contain lists and functions
+
+### create
+```
+tibble(names = c("John", "Juan", "Jean", "Yao"), 
+       exam_1 = c(95, 80, 90, 85), 
+       exam_2 = c(90, 85, 85, 90))
+```
 
 
 
@@ -127,9 +140,9 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`my_df["variable_name"]`|subset of data.frame|
 |`with(my_df, plot(variable1, variable2))`|avoid using accessors|
 |`nrow(my_df)`|number of rows|
-|`summarize(my_df, minimum = min(x)`|create new data frame with summary, `dplyr`|
-|`group_by(my_df, x)`|create grouped data frame, `dplyr`|
-|`group_by(my_df, x, y)`|create multi-grouped data frame, `dplyr`|
+|`summarize(my_df, minimum = min(x)`|create _(tibble)_ data frame with summary, `dplyr`|
+|`group_by(my_df, x)`|create grouped _(tibble)_ data frame, `dplyr`|
+|`group_by(my_df, x, y)`|create multi-grouped _(tibble)_ data frame, `dplyr`|
 |`pull(my_df, x)`|similar to `$`, `dplyr`|
 |`.$x`|placeholder for data when piping|
 
