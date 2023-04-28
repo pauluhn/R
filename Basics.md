@@ -45,7 +45,7 @@
 |`cut`||
 |`quantile`||
 |`reduce`||
-|`unique`||
+|`unique`|like a `set`|
 
 
 
