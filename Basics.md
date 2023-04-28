@@ -37,6 +37,17 @@
 |`head(x)`|show first six lines|
 |`names(x)`|object variable names|
 |`identical(x, y)`|compare if two objects are identical|
+|`apply`||
+|`sapply`||
+|`tapply`||
+|`mapply`||
+|`split`||
+|`cut`||
+|`quantile`||
+|`reduce`||
+|`unique`||
+
+
 
 ### pipe
 |command|notes|
@@ -169,6 +180,12 @@ murders %>% arrange(desc(rate)) %>% top_n(10)
 
 
 # Vector
+
+### create
+```
+empty_vector <- vector(length = 5)
+```
+
 |command|notes|
 |-|-|
 |`length(x)`|vector length|
@@ -249,13 +266,25 @@ names(codes) <- country
 
 
 
+# Programming
+|command|notes|
+|-|-|
+|`if (logical) { a } else { b }`||
+|`ifelse(logical, a, b)`|works with vectors|
+|`any(x)`|works with vectors|
+|`all(x)`|works with vectors|
+|`for(i in x) { a }`|for-in loop|
+
+
+
+
 
 
 # Function
 ```
-my_func <- function(x){
-  r <-  quantile(x, c(0, 0.5, 1))
-  data.frame(minimum = r[1], median = r[2], maximum = r[3]) 
+my_func <- function(x, v = c(0, 0.5, 1)) { # variable and default values
+  r <-  quantile(x, v)
+  data.frame(minimum = r[1], median = r[2], maximum = r[3]) # return value
 }
 ```
 
@@ -270,3 +299,4 @@ my_func <- function(x){
 |`hist(x)`|histogram|
 |`boxplot(x~y, data=my_df)`|boxplot|
 |`image(matrix)`|colored matrix|
+|`line(x, y)`|line graph|
