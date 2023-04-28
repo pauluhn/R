@@ -51,7 +51,7 @@
 ### normal distribution
 |command|notes|
 |-|-|
-|`pnorm(a, mean(x), sd(x))`|probability of `a` in `x`|
+|`pnorm(a, mean(x), sd(x))`|probability of `a` in `x`, cdf|
 
 
 
