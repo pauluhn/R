@@ -46,6 +46,12 @@
 |`quantile`||
 |`reduce`||
 |`unique`|like a `set`|
+|`scale(x)`|convert to standard units|
+
+### normal distribution
+|command|notes|
+|-|-|
+|`pnorm(a, mean(x), sd(x))`|probability of `a` in `x`|
 
 
 
@@ -190,7 +196,8 @@ empty_vector <- vector(length = 5)
 |-|-|
 |`length(x)`|vector length|
 |`nchar(x)`|char vector length|
-|`table(x)`|frequency table|
+|`table(x)`|frequency table of counts|
+|`prop.table(x)`|frequency table of proportions|
 |`sort(x)`|sorted values|
 |`order(x)`|sorted indices|
 |`rank(x)`|rank of items of original vector, ascending|
