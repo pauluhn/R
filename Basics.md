@@ -189,6 +189,7 @@ empty_vector <- vector(length = 5)
 |command|notes|
 |-|-|
 |`length(x)`|vector length|
+|`nchar(x)`|char vector length|
 |`table(x)`|frequency table|
 |`sort(x)`|sorted values|
 |`order(x)`|sorted indices|
