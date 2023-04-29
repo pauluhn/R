@@ -43,7 +43,9 @@
 |`mapply`||
 |`split`||
 |`cut`||
-|`quantile`||
+|`quantile(x, q)`|quantiles given probabilities|
+|`quantile(x, seq(0.01, 0.99, 0.01))`|percentiles <br> access using `percentiles[names(percentiles) == "25%"]`|
+|`summary(x)`|quartiles, min and max|
 |`reduce`||
 |`unique`|like a `set`|
 |`scale(x)`|convert to standard units|
@@ -52,8 +54,13 @@
 ### normal distribution
 |command|notes|
 |-|-|
-|`pnorm(a, mean(x), sd(x))`|probability of `a` in `x`, cdf|
+|`pnorm(a, mean(x), sd(x))`|probability (or quantile) of value `a` in `x`, cdf <br> inverse of qnorm|
+|`qnorm(a, mean(x)=0, sd(x)=1`|_value_ of probability `a` in `x` <br> for standard distribution, use default values <br> inverse of pnorm|
 
+```
+p <- seq(0.01, 0.99, 0.01)
+theoretical_quantiles <- qnorm(p, mean(x), sd(x))
+```
 
 
 ### pipe
@@ -309,3 +316,4 @@ my_func <- function(x, v = c(0, 0.5, 1)) { # variable and default values
 |`boxplot(x~y, data=my_df)`|boxplot|
 |`image(matrix)`|colored matrix|
 |`line(x, y)`|line graph|
+|`abline(intercept, slope)`|single straight line|
