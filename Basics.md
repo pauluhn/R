@@ -210,7 +210,11 @@ empty_vector <- vector(length = 5)
 |`order(x)`|sorted indices|
 |`rank(x)`|rank of items of original vector, ascending|
 |`rank(-x)`|rank of items of original vector, descending|
+|`mean(x)`|mean, average|
+|`sd(x)`|standard deviation|
 |`max(x)`|max value|
+|`median(x)`|median value|
+|`mad(x)`|median absolute deviation|
 |`min(x)`|min value|
 |`which.max(x)`|index of max|
 |`which.min(x)`|index of min|
