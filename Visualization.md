@@ -7,6 +7,15 @@ library(tidyverse)  # ggplot is part of tidyverse
 library(ggplot2)    # load just ggplot2 instead of entire tidyverse
 ```
 
+### additional libraries
+```
+library(ggthemes)  # additional themes
+library(ggrepel)   # geometry that repels labels
+
+library(dslabls)
+ds_theme_set()     # theme by dslabs
+```
+
 ### create
 ```
 ggplot(data = x)
