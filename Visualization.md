@@ -21,7 +21,7 @@ ds_theme_set()      # theme by dslabs
 ```
 ggplot(data = x)
 ggplot(x)
-x |> ggplot()
+x |> ggplot(aes(x=a, y=b, color=c, group=d))
 ```
 
 ### layers
