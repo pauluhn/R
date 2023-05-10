@@ -38,3 +38,6 @@ x |> ggplot(aes(x=a, y=b, color=c, group=d))
 |`xlab("text")` <br> `ylab("text")`|axis label|
 |`ggtitle("text")`|plot title|
 |`grid.arrange()`|grid of plots, `gridExtra`|
+|`facet_grid(a ~ b)`|multiple side-by-side plots faceted by variables `a` and `b`|
+|`facet_grid(. ~ a)`|plots faceted by only variable `a`|
+|`facet_wrap(~ a)`|plots faceted by only variable `a` <br> wrapping onto multiple rows|
