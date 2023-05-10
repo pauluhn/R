@@ -9,12 +9,13 @@ library(ggplot2)    # load just ggplot2 instead of entire tidyverse
 
 ### additional libraries
 ```
-library(ggthemes)   # additional themes
-library(ggrepel)    # geometry that repels labels
-library(gridExtra)  # grid of plots
+library(ggthemes)     # additional themes
+library(ggrepel)      # geometry that repels labels
+library(gridExtra)    # grid of plots
+library(geomtextpath) # geometry for text along a path
 
 library(dslabls)
-ds_theme_set()      # theme by dslabs
+ds_theme_set()        # theme by dslabs
 ```
 
 ### create
@@ -33,10 +34,13 @@ x |> ggplot(aes(x=a, y=b, color=c, group=d))
 |`geom_qq()`|quantile-quantile plot|
 |`geom_label(x, y, label)`||
 |`geom_text(x, y, label)`||
+|`geom_textpath()`|text along a path, `geomtextpath`|
 |`geom_abline(slope, intercept)`|single line|
+|`scale_x_continuous(trans="log2")` <br> `scale_y_continuous(trans="log2")`|log2 scale|
 |`scale_x_log10()` <br> `scale_y_log10()`|log10 scale|
 |`xlab("text")` <br> `ylab("text")`|axis label|
 |`ggtitle("text")`|plot title|
+|`theme(legend.position="none")`|hide legend|
 |`grid.arrange()`|grid of plots, `gridExtra`|
 |`facet_grid(a ~ b)`|multiple side-by-side plots faceted by variables `a` and `b`|
 |`facet_grid(. ~ a)`|plots faceted by only variable `a`|
