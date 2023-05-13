@@ -293,11 +293,21 @@ names(codes) <- country
 |-|-|
 |`if (logical) { a } else { b }`||
 |`ifelse(logical, a, b)`|works with vectors|
+|`case_when()`|switch statement, `dplyr`|
 |`any(x)`|works with vectors|
 |`all(x)`|works with vectors|
 |`for(i in x) { a }`|for-in loop|
 
-
+### `case_when` example
+```
+case_when(
+  .$region %in% west ~ "West",
+  .$region %in% c("Eastern Asia", "South-Eastern Asia") ~ "East Asia",
+  .$region %in% c("Caribbean", "Central America", "South America") ~ "Latin America",
+  .$continent == "Africa" & .$region != "Northern Africa" ~ "Sub-Saharan Africa",
+  TRUE ~ "Others"
+)
+```
 
 
 
