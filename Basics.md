@@ -281,6 +281,7 @@ names(codes) <- country
 |-|-|
 |`levels(x)`|factor levels|
 |`nlevels(x)`|number of factor levels|
+|`reorder(x, y, FUN=mean)`|reorder factors `x` by values `y` via function `mean`|
 
 
 
