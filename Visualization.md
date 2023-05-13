@@ -23,6 +23,9 @@ ds_theme_set()        # theme by dslabs
 ggplot(data = x)
 ggplot(x)
 x |> ggplot(aes(x=a, y=b, color=c, group=d))
+
+# using computed variables
+x |> ggplot(aes(x=a, y=..count..))
 ```
 
 ### layers
@@ -47,3 +50,4 @@ x |> ggplot(aes(x=a, y=b, color=c, group=d))
 |`facet_grid(a ~ b)`|multiple side-by-side plots faceted by variables `a` and `b`|
 |`facet_grid(. ~ a)`|plots faceted by only variable `a`|
 |`facet_wrap(~ a)`|plots faceted by only variable `a` <br> wrapping onto multiple rows|
+|`..count..`|access computed variables using pairs of `..`|
