@@ -222,6 +222,7 @@ empty_vector <- vector(length = 5)
 |`which(logical)`|returns indicies (avoid long logical vector)|
 |`match(x, y)`|returns y indicies that match x|
 |`x %in% y`|returns logical vector|
+|`intersect(x, y)`|returns intersection vector|
 
 ### `match` example
 ```
