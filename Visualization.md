@@ -22,7 +22,7 @@ ds_theme_set()        # theme by dslabs
 ```
 ggplot(data = x)
 ggplot(x)
-x |> ggplot(aes(x=a, y=b, color=c, group=d))
+x |> ggplot(aes(x=a, y=b, color=c, group=d, weight=e))
 
 # using computed variables
 x |> ggplot(aes(x=a, y=..count..))
@@ -34,6 +34,7 @@ x |> ggplot(aes(x=a, y=..count..))
 |`geom_point(x, y)`|scatterplot|
 |`geom_histogram(binwidth=1, fill="blue", col="black")`|histogram, bin width of 1, blue bars with black outline|
 |`geom_density(fill="blue")`|smooth density plot|
+|`geom_density(position="stack")`|stacked density plot|
 |`geom_qq()`|quantile-quantile plot|
 |`geom_boxplot()`|boxplot|
 |`geom_label(x, y, label)`||
