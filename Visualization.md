@@ -32,6 +32,7 @@ x |> ggplot(aes(x=a, y=b, color=c, group=d))
 |`geom_histogram(binwidth=1, fill="blue", col="black")`|histogram, bin width of 1, blue bars with black outline|
 |`geom_density(fill="blue")`|smooth density plot|
 |`geom_qq()`|quantile-quantile plot|
+|`geom_boxplot()`|boxplot|
 |`geom_label(x, y, label)`||
 |`geom_text(x, y, label)`||
 |`geom_textpath()`|text along a path, `geomtextpath`|
@@ -41,6 +42,7 @@ x |> ggplot(aes(x=a, y=b, color=c, group=d))
 |`xlab("text")` <br> `ylab("text")`|axis label|
 |`ggtitle("text")`|plot title|
 |`theme(legend.position="none")`|hide legend|
+|`theme(axis.text.x=element_text(angle=90, hjust=1))`|rotate text, set justification|
 |`grid.arrange()`|grid of plots, `gridExtra`|
 |`facet_grid(a ~ b)`|multiple side-by-side plots faceted by variables `a` and `b`|
 |`facet_grid(. ~ a)`|plots faceted by only variable `a`|
