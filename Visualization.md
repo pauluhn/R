@@ -49,6 +49,6 @@ x |> ggplot(aes(x=a, y=..count..))
 |`theme(axis.text.x=element_text(angle=90, hjust=1))`|rotate text, set justification|
 |`grid.arrange()`|grid of plots, `gridExtra`|
 |`facet_grid(a ~ b)`|multiple side-by-side plots faceted by variables `a` and `b`|
-|`facet_grid(. ~ a)`|plots faceted by only variable `a`|
+|`facet_grid(. ~ a)` <br> `facet_grid(. ~ a)`|plots faceted by only variable `a`|
 |`facet_wrap(~ a)`|plots faceted by only variable `a` <br> wrapping onto multiple rows|
 |`..count..`|access computed variables using pairs of `..`|
