@@ -223,6 +223,7 @@ empty_vector <- vector(length = 5)
 |`match(x, y)`|returns y indicies that match x|
 |`x %in% y`|returns logical vector|
 |`intersect(x, y)`|returns intersection vector|
+|`factor(x)`|encode to `factor`|
 
 ### `match` example
 ```
