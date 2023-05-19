@@ -50,6 +50,7 @@
 |`unique`|like a `set`|
 |`scale(x)`|convert to standard units|
 |`round(x)`|rounding|
+|`signif(x, digits=y)`|rounding to `y` significant digits|
 
 ### normal distribution
 |command|notes|
