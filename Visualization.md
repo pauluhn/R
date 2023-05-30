@@ -42,7 +42,7 @@ x |> ggplot(aes(x=a, y=..count..))
 |`geom_label(x, y, label)`||
 |`geom_text(x, y, label)`||
 |`geom_textpath()`|text along a path, `geomtextpath`|
-|`geom_abline(slope, intercept)`|single line|
+|`geom_vline(xintercept)` <br> `geom_hline(yintercept)` <br> `geom_abline(slope, intercept)`|single line|
 |`scale_x_continuous(trans="log2")` <br> `scale_y_continuous(trans="log2")`|log2 scale|
 |`scale_x_log10()` <br> `scale_y_log10()`|log10 scale|
 |`xlab("text")` <br> `ylab("text")`|axis label|
