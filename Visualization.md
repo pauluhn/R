@@ -56,6 +56,7 @@ x |> ggplot(aes(x=a, y=..count..))
 |`facet_wrap(~ a)`|plots faceted by only variable `a` <br> wrapping onto multiple rows|
 |`..count..`|access computed variables using pairs of `..`|
 |`scale_color_manual(values)`|use custom color, _see below_|
+|`xlim(a, b)` <br> `ylim(c, d)`|zooming with clipping|
 
 ### custom colors
 ```
