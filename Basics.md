@@ -222,7 +222,7 @@ empty_vector <- vector(length = 5)
 |`is.na(x)`|returns logical vector|
 |`which(logical)`|returns indicies (avoid long logical vector)|
 |`match(x, y)`|returns y indicies that match x|
-|`x %in% y`|returns logical vector|
+|`x %in% y`|returns logical vector, similar to `OR`|
 |`intersect(x, y)`|returns intersection vector|
 |`factor(x)`|encode to `factor`|
 
