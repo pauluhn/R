@@ -33,6 +33,7 @@ x |> ggplot(aes(x=a, y=..count..))
 |-|-|
 |`geom_point(x, y)`|scatterplot|
 |`geom_point(position="jitter")` <br> `geom_jitter()`|jittered scatterplot|
+|`geom_line(x, y)`|lineplot|
 |`geom_bar(x, y)`|barplot|
 |`geom_histogram(binwidth=1, fill="blue", col="black")`|histogram, bin width of 1, blue bars with black outline|
 |`geom_density(fill="blue")`|smooth density plot|
