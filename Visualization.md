@@ -54,3 +54,9 @@ x |> ggplot(aes(x=a, y=..count..))
 |`facet_grid(. ~ a)` <br> `facet_grid(a ~ .)`|plots faceted by only variable `a`|
 |`facet_wrap(~ a)`|plots faceted by only variable `a` <br> wrapping onto multiple rows|
 |`..count..`|access computed variables using pairs of `..`|
+|`scale_color_manual(values)`|use custom color, _see below_|
+
+### custom colors
+```
+scale_color_manual(values = c("#000000", "#AAAAAA", "#0022BB", "#22BB00", "#CCCCCC", "#CC00CC", "#CCCC00", "#00CCCC", "#CC0000", "#888888"))
+```
