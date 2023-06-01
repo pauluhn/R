@@ -1,5 +1,11 @@
 # Probability
 
+### Libraries
+
+```
+library(gtools) # programming tools
+```
+
 # Commands
 
 |command|notes|
