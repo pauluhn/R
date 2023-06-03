@@ -38,7 +38,7 @@
 |`names(x)`|object variable names|
 |`identical(x, y)`|compare if two objects are identical|
 |`apply`||
-|`sapply`||
+|`sapply(x, f)`|apply function `f` over vector `x`|
 |`tapply`||
 |`mapply`||
 |`split`||
