@@ -20,7 +20,7 @@ library(gtools) # programming tools
 |`permutations(n, r)` <br> `permutations(n, r, v)`|`r` items from set of `n` options, order matters, `gtools` <br> `v` is source vector with default `1:n`|
 |`combinations(n, r)` <br> `combinations(n, r, v)`|`r` items from set of `n` options, order _does not_ matter, `gtools` <br> `v` is source vector with default `1:n`|
 
-also see [Basic Programming](Basics.md#programming)
+also see [Basic Commands](Basics.md#basic-commands), [Basic Programming](Basics.md#programming)
 
 # Cookbook
 
