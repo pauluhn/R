@@ -51,6 +51,7 @@
 |`scale(x)`|convert to standard units|
 |`round(x)`|rounding|
 |`signif(x, digits=y)`|rounding to `y` significant digits|
+|`prod(x)`|product of multiplying all elements in vector `x`|
 
 ### normal distribution
 |command|notes|
