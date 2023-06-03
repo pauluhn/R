@@ -299,6 +299,9 @@ names(codes) <- country
 |`any(x)`|works with vectors|
 |`all(x)`|works with vectors|
 |`for(i in x) { a }`|for-in loop|
+|`duplicated(x)`|for vector `x`, returns `TRUE` for element that is duplicate|
+
+also see [Probability](Probability.md)
 
 ### `case_when` example
 ```
