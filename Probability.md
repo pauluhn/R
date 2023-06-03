@@ -13,6 +13,7 @@ library(gtools) # programming tools
 |`rep(x, y)`|replicate values in `x` by `y` times|
 |`sample(x, y)`|random sample from `x` picking `y` times _without_ replacement|
 |`sample(x, y, replace=TRUE)`|random sample _with_ replacement|
+|`sample(x, y, replace=TRUE, prob=z)`|random sample _with_ replacement using `z` weights|
 |`replicate(x, expr)`|repeated evaluation of `expr` - _wrapper for `sapply`_, see [Basics](Basics.md)|
 |`set.seed(x)` <br> `set.seed(x, sample.kind="Rounding")`|random number generator seed <br> `sample.kind="Rounding"` will set R `3.6+` behavior to `3.5`|
 |`paste(x, y)`|joins `x` and `y` with a _space_|
