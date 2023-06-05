@@ -173,6 +173,8 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`group_by(my_df, x, y)`|create multi-grouped _(tibble)_ data frame, `dplyr`|
 |`pull(my_df, x)`|similar to `$`, `dplyr`|
 |`.$x`|placeholder for data when piping|
+|`colSums(my_df)`|sum of each column|
+|`rowSums(my_df)`|sum of each row|
 
 ### manipulate
 _uses `dplyr` package_
