@@ -341,3 +341,5 @@ my_func <- function(x, v = c(0, 0.5, 1)) { # variable and default values
 |`image(matrix)`|colored matrix|
 |`line(x, y)`|line graph|
 |`abline(intercept, slope)`|single straight line|
+|`qqplot(x, y)`|QQ-plot|
+
