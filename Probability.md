@@ -20,7 +20,8 @@ library(gtools) # programming tools
 |`expand.grid(a=x, b=y)`|creates data frame with columns `a` and `b` <br> from all combinations of `x` and `y`|
 |`permutations(n, r)` <br> `permutations(n, r, v)`|`r` items from set of `n` options, order matters, `gtools` <br> `v` is source vector with default `1:n`|
 |`combinations(n, r)` <br> `combinations(n, r, v)`|`r` items from set of `n` options, order _does not_ matter, `gtools` <br> `v` is source vector with default `1:n`|
-|`dnorm(x)` <br> `dnorm(mean=0, sd=1)`|density normal distribution of `x` <br> for _non-z-scores_, set `mean` and `sd`|
+|`dnorm(x)` <br> `dnorm(x, mean=0, sd=1)`|density normal distribution of `x` <br> for _non-z-scores_, set `mean` and `sd`|
+|`rnorm(n)` <br> `rnorm(n, mean=0, sd=1)`|random vector of length `n` generated using `mean`/`sd`|
 
 also see [Basic Commands](Basics.md#basic-commands), [Basic Programming](Basics.md#programming)
 
