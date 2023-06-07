@@ -21,7 +21,7 @@ library(gtools) # programming tools
 |`permutations(n, r)` <br> `permutations(n, r, v)`|`r` items from set of `n` options, order matters, `gtools` <br> `v` is source vector with default `1:n`|
 |`combinations(n, r)` <br> `combinations(n, r, v)`|`r` items from set of `n` options, order _does not_ matter, `gtools` <br> `v` is source vector with default `1:n`|
 |`dnorm(x)` <br> `dnorm(x, mean=0, sd=1)`|density normal distribution of `x` <br> for _non-z-scores_, set `mean` and `sd`|
-|`pnorm(q)` <br> `pnorm(q, mean=0, sd=1)`|probability density normal distribution of `q`|
+|`pnorm(q)` <br> `pnorm(q, mean=0, sd=1)`|probability density normal distribution of `q` <br> see [Basic Normal Distribution](Basics.md#normal-distribution)|
 |`qnorm(p)` <br> `qnorm(p, mean=0, sd=1)`|quantile normal distribution of `p`|
 |`rnorm(n)` <br> `rnorm(n, mean=0, sd=1)`|random vector of length `n` generated using `mean`/`sd`|
 
