@@ -59,11 +59,11 @@
 |`pnorm(a, mean(x), sd(x))`|probability (or quantile) of value `a` in `x`, cdf <br> inverse of qnorm|
 |`qnorm(a, mean(x)=0, sd(x)=1`|_value_ of probability `a` in `x` <br> for standard distribution, use default values <br> inverse of pnorm|
 
+see [Probability](Probability.md#commands) for more _-norm()_ functions
 ```
 p <- seq(0.01, 0.99, 0.01)
 theoretical_quantiles <- qnorm(p, mean(x), sd(x))
 ```
-
 
 ### pipe
 |command|notes|
