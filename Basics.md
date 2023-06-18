@@ -52,6 +52,8 @@
 |`round(x)`|rounding|
 |`signif(x, digits=y)`|rounding to `y` significant digits|
 |`prod(x)`|product of multiplying all elements in vector `x`|
+|`abs(x)`|absolute value of `x`|
+|`sqrt(x)`|square root of `x`|
 
 ### normal distribution
 |command|notes|
