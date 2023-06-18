@@ -10,7 +10,7 @@ library(gtools) # programming tools
 
 |command|notes|
 |-|-|
-|`rep(x, y)`|replicate values in `x` by `y` times|
+|`rep(x, times=y)`|replicate values in `x` by `y` times|
 |`sample(x, y)`|random sample from `x` picking `y` times _without_ replacement|
 |`sample(x, y, replace=TRUE)`|random sample _with_ replacement|
 |`sample(x, y, replace=TRUE, prob=z)`|random sample _with_ replacement using `z` weights|
