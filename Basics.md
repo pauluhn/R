@@ -344,4 +344,6 @@ my_func <- function(x, v = c(0, 0.5, 1)) { # variable and default values
 |`line(x, y)`|line graph|
 |`abline(intercept, slope)`|single straight line|
 |`qqplot(x, y)`|QQ-plot|
+|`qqnorm(y)`|QQ-plot where `x` is _normal_|
+|`qqline(y)`|single straight _normal_ line added to QQ-plot|
 
