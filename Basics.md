@@ -306,6 +306,7 @@ names(codes) <- country
 |`all(x)`|works with vectors|
 |`for(i in x) { a }`|for-in loop|
 |`duplicated(x)`|for vector `x`, returns `TRUE` for element that is duplicate|
+|`between(x, left, right)`|`x >= left & x <= right`|
 
 also see [Probability](Probability.md)
 
