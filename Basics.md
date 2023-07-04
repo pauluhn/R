@@ -173,6 +173,7 @@ my_df <- data.frame(v1 = x, v2 = y)
 |`summarize(my_df, minimum = min(x)`|create _(tibble)_ data frame with summary, `dplyr`|
 |`group_by(my_df, x)`|create grouped _(tibble)_ data frame, `dplyr`|
 |`group_by(my_df, x, y)`|create multi-grouped _(tibble)_ data frame, `dplyr`|
+|`ungroup(my_df_grouped)`|remove grouping, `dplyr`|
 |`pull(my_df, x)`|similar to `$`, `dplyr`|
 |`.$x`|placeholder for data when piping|
 |`colSums(my_df)`|sum of each column|
